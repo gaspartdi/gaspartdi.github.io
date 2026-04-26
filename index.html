@@ -38,7 +38,6 @@
       overflow-x: hidden;
     }
 
-    /* NOISE OVERLAY */
     body::before {
       content: '';
       position: fixed;
@@ -49,7 +48,6 @@
       z-index: 1000;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -106,7 +104,6 @@
       border-color: var(--accent);
     }
 
-    /* HERO */
     .hero {
       min-height: 100vh;
       display: grid;
@@ -181,9 +178,7 @@
       transition: all 0.2s;
     }
 
-    .btn-primary:hover {
-      background: #ddd09a;
-    }
+    .btn-primary:hover { background: #ddd09a; }
 
     .btn-ghost {
       font-family: var(--mono);
@@ -205,7 +200,6 @@
       gap: 1rem;
     }
 
-    /* TERMINAL CARD */
     .terminal {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -224,22 +218,15 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .terminal-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-    }
+    .terminal-dot { width: 10px; height: 10px; border-radius: 50%; }
 
-    .terminal-body {
-      padding: 1.25rem 1.5rem;
-      line-height: 1.9;
-    }
+    .terminal-body { padding: 1.25rem 1.5rem; line-height: 1.9; }
 
     .t-muted { color: var(--muted); }
     .t-green { color: var(--green); }
     .t-gold { color: var(--accent); }
     .t-blue { color: var(--accent2); }
 
-    /* STATUS PILL */
     .status-pill {
       display: inline-flex;
       align-items: center;
@@ -267,7 +254,6 @@
       50% { opacity: 0.3; }
     }
 
-    /* SECTION */
     section {
       max-width: 1200px;
       margin: 0 auto;
@@ -295,7 +281,6 @@
       line-height: 1.15;
     }
 
-    /* DIVIDER */
     .divider {
       border: none;
       border-top: 1px solid var(--border);
@@ -303,7 +288,6 @@
       margin: 0 auto;
     }
 
-    /* EXPERTISE */
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -333,7 +317,6 @@
       font-weight: 600;
       color: var(--text);
       margin-bottom: 0.6rem;
-      letter-spacing: 0.01em;
     }
 
     .expertise-card p {
@@ -342,12 +325,7 @@
       line-height: 1.65;
     }
 
-    /* EXPERIENCE */
-    .exp-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
+    .exp-list { display: flex; flex-direction: column; }
 
     .exp-item {
       display: grid;
@@ -389,7 +367,6 @@
       line-height: 1.7;
     }
 
-    /* STACK */
     .stack-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -418,7 +395,6 @@
       color: var(--accent);
     }
 
-    /* METRICS */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -428,11 +404,7 @@
       margin-bottom: 4rem;
     }
 
-    .metric {
-      background: var(--bg);
-      padding: 2rem 2.5rem;
-      text-align: center;
-    }
+    .metric { background: var(--bg); padding: 2rem 2.5rem; text-align: center; }
 
     .metric-num {
       font-family: var(--serif);
@@ -450,7 +422,6 @@
       text-transform: uppercase;
     }
 
-    /* CONTACT */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -465,10 +436,7 @@
       margin-bottom: 1rem;
     }
 
-    .contact-cta h2 em {
-      font-style: italic;
-      color: var(--accent);
-    }
+    .contact-cta h2 em { font-style: italic; color: var(--accent); }
 
     .contact-cta p {
       color: var(--muted);
@@ -477,11 +445,7 @@
       margin-bottom: 2rem;
     }
 
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
+    .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
 
     .contact-row {
       display: flex;
@@ -500,15 +464,9 @@
       text-transform: uppercase;
     }
 
-    .contact-row-value {
-      font-family: var(--mono);
-      font-size: 0.82rem;
-      color: var(--text);
-    }
-
+    .contact-row-value { font-family: var(--mono); font-size: 0.82rem; color: var(--text); }
     .contact-row-value.green { color: var(--green); }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem 2.5rem;
@@ -526,7 +484,6 @@
       letter-spacing: 0.06em;
     }
 
-    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -538,7 +495,6 @@
     .hero-actions { animation: fadeUp 0.6s ease 0.3s both; }
     .hero-visual { animation: fadeUp 0.6s ease 0.4s both; }
 
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.25rem; }
       .nav-links { display: none; }
@@ -553,7 +509,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Gaspar T.</a>
   <ul class="nav-links">
@@ -565,7 +520,6 @@
   <a href="https://www.upwork.com/freelancers/~gasparte" target="_blank" class="nav-cta">Hire on Upwork</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-content">
     <div class="status-pill">
@@ -580,7 +534,7 @@
       UIs to robust back-end systems and infrastructure.
     </p>
     <div class="hero-actions">
-      <a href="https://www.upwork.com/freelancers/~gasparte" target="_blank" class="btn-primary">Hire me on Upwork</a>
+      <a href="#contact" class="btn-primary">Get in touch</a>
       <a href="#experience" class="btn-ghost">View my work ↓</a>
     </div>
   </div>
@@ -598,7 +552,6 @@
         <div class="t-muted">&nbsp;</div>
         <div><span class="t-blue">name:</span> <span>Gaspar T.</span></div>
         <div><span class="t-blue">role:</span> <span>Senior Software Engineer</span></div>
-        <div><span class="t-blue">rate:</span> <span class="t-gold">$35 / hr</span></div>
         <div><span class="t-blue">location:</span> <span>Mar del Plata, Argentina 🇦🇷</span></div>
         <div><span class="t-blue">languages:</span> <span>English (fluent), Spanish (native)</span></div>
         <div><span class="t-blue">hours:</span> <span>30+ hrs/week</span></div>
@@ -610,7 +563,6 @@
   </div>
 </div>
 
-<!-- METRICS -->
 <div style="max-width:1200px;margin:0 auto;padding:0 2.5rem;">
   <div class="metrics-row">
     <div class="metric">
@@ -622,21 +574,19 @@
       <div class="metric-label">Hours available / week</div>
     </div>
     <div class="metric">
-      <div class="metric-num">$35</div>
-      <div class="metric-label">Hourly rate (USD)</div>
+      <div class="metric-num">∞</div>
+      <div class="metric-label">Problems solved</div>
     </div>
   </div>
 </div>
 
 <hr class="divider" />
 
-<!-- EXPERTISE -->
 <section id="expertise">
   <div class="section-header">
     <span class="section-num">01</span>
     <h2 class="section-title">What I do best</h2>
   </div>
-
   <div class="expertise-grid">
     <div class="expertise-card">
       <div class="expertise-icon">&lt;/&gt;</div>
@@ -663,50 +613,34 @@
 
 <hr class="divider" />
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header">
     <span class="section-num">02</span>
     <h2 class="section-title">Work history</h2>
   </div>
-
   <div class="exp-list">
     <div class="exp-item">
-      <div>
-        <div class="exp-period">Nov 2025 — Present</div>
-      </div>
+      <div><div class="exp-period">Nov 2025 — Present</div></div>
       <div>
         <div class="exp-role">Senior Software Engineer</div>
         <div class="exp-company">GlobalLogic</div>
-        <p class="exp-desc">
-          Working on high-impact engineering at one of the world's leading digital product companies, delivering scalable solutions for enterprise clients across industries.
-        </p>
+        <p class="exp-desc">Working on high-impact engineering at one of the world's leading digital product companies, delivering scalable solutions for enterprise clients across industries.</p>
       </div>
     </div>
-
     <div class="exp-item">
-      <div>
-        <div class="exp-period">May 2021 — Oct 2025</div>
-      </div>
+      <div><div class="exp-period">May 2021 — Oct 2025</div></div>
       <div>
         <div class="exp-role">Web UI Developer</div>
         <div class="exp-company">Globant</div>
-        <p class="exp-desc">
-          Over four years shipping front-end solutions for high-profile brands and Fortune 500 clients. Built and maintained complex React applications with a strong focus on performance, accessibility, and design fidelity. Worked in agile squads across multiple time zones.
-        </p>
+        <p class="exp-desc">Over four years shipping front-end solutions for high-profile brands and Fortune 500 clients. Built and maintained complex React applications with a strong focus on performance, accessibility, and design fidelity. Worked in agile squads across multiple time zones.</p>
       </div>
     </div>
-
     <div class="exp-item">
-      <div>
-        <div class="exp-period">Aug 2020 — Apr 2021</div>
-      </div>
+      <div><div class="exp-period">Aug 2020 — Apr 2021</div></div>
       <div>
         <div class="exp-role">Full Stack Developer</div>
         <div class="exp-company">Latech</div>
-        <p class="exp-desc">
-          Developed full-stack features across front-end and back-end layers. Gained hands-on experience building APIs, working with databases, and delivering end-to-end product features.
-        </p>
+        <p class="exp-desc">Developed full-stack features across front-end and back-end layers. Gained hands-on experience building APIs, working with databases, and delivering end-to-end product features.</p>
       </div>
     </div>
   </div>
@@ -714,13 +648,11 @@
 
 <hr class="divider" />
 
-<!-- STACK -->
 <section id="stack">
   <div class="section-header">
     <span class="section-num">03</span>
     <h2 class="section-title">Tech stack</h2>
   </div>
-
   <div class="stack-grid">
     <div class="stack-tag highlight">React</div>
     <div class="stack-tag highlight">Next.js</div>
@@ -745,24 +677,17 @@
 
 <hr class="divider" />
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="contact-grid">
     <div class="contact-cta">
       <h2>Ready to build<br />something <em>great</em>?</h2>
-      <p>
-        Whether you need a polished front-end, a full-stack solution, or a technical partner who can think through the whole product — I'm here for it.
-      </p>
-      <a href="https://www.upwork.com/freelancers/~gasparte" target="_blank" class="btn-primary">View my Upwork profile →</a>
+      <p>Whether you need a polished front-end, a full-stack solution, or a technical partner who can think through the whole product — I'm here for it.</p>
+      <a href="mailto:gaspartdi@gmail.com" class="btn-primary">Get in touch →</a>
     </div>
     <div class="contact-info">
       <div class="contact-row">
         <span class="contact-row-label">Status</span>
         <span class="contact-row-value green">● Available now</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-row-label">Rate</span>
-        <span class="contact-row-value">$35 / hr USD</span>
       </div>
       <div class="contact-row">
         <span class="contact-row-label">Availability</span>
